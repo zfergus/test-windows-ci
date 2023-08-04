@@ -13,6 +13,9 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 add_executable(test test.cpp)
 
+# Use C++17
+target_compile_features(test PUBLIC cxx_std_17)
+
 ################################################################################
 # Required Libraries
 ################################################################################
